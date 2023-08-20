@@ -10,5 +10,5 @@
 2. Создать телеграм бота при помощи aiogram.
 3. Создать базу даных MySQL.
 * 3.1 Реализовать грамотно таблицы для сущностей.
- ![таблицы](/home/valery/PROGRAMMING/Python/Final_Thesis_Collection_of_coins/images/drawSQL-diplom-export-2023-08-20.png)
+![drawSQL](images/drawSQL-diplom-export-2023-08-20.png)
 4. связать базу данных MySQL с телеграм ботом.
