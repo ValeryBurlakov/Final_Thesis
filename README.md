@@ -40,7 +40,9 @@
 	id INT PRIMARY KEY AUTO_INCREMENT,
     image BLOB
 );
+
 5. связать базу данных MySQL с телеграм ботом.
+* pip install mysql-connector-python
 6. Реализовать методы для работы бота с базой данных
 * Добавление/удаление монет
 * вывод коллекции
