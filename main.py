@@ -69,22 +69,25 @@ async def process_coin_name(message: types.Message, state: FSMContext):
     cursor.execute("SELECT coin_collection FROM users WHERE id = %s", (user_id,))
     result = cursor.fetchone()
 
-    if result is not None:
-        coin_collection = result[0]
-    else:
-        coin_collection = ","
+    cursor.execute("INSERT INTO coin (_description, collection_id) VALUES (%s, %s)", (coin_name, user_id))
+    mydb.commit()
+    await message.answer("Введите год монеты:")
+    # await state.finish()
+    await state.set_state("waiting_year") # переход в следующее состояние
+    # await message.answer(f"Монета {coin_name} добавлена в коллекцию.")
+@dp.message_handler(state="waiting_year")
+async def process_coin_name(message: types.Message, state: FSMContext):
+    user_id = message.from_user.id
+    coin_year = message.text  # Получаем year монеты из команды
+    cursor.execute("SELECT _description FROM coin WHERE id = 4")
+    coin_name = cursor.fetchone()
 
-    if coin_collection is not None:
-        coin_collection += coin_name + ","
-    else:
-        coin_collection = coin_name + ","
-
-    cursor.execute("UPDATE users SET coin_collection = %s WHERE id = %s", (coin_collection, user_id))
+    cursor.execute("UPDATE coin SET _year = %s WHERE _description = %s", (coin_year, coin_name))
     mydb.commit()
 
     # await state.finish()
     await state.set_state("create_collection") # переход в следующее состояние
-    await message.answer(f"Монета {coin_name} добавлена в коллекцию.")
+
 # ===================================================================
 
 # создание коллекции юзера
@@ -102,26 +105,10 @@ async def add_coin(message: types.Message, state: FSMContext):
 async def process_coin_name(message: types.Message, state: FSMContext):
     user_id = message.from_user.id
     username = message.from_user.username
-    collection_name = message.text  # Получаем название монеты из команды
-    collection_id = 1
+    collection_name = message.text  # Получаем название коллекции из команды
 
-    if collection_name == collection_id:
-        collection_name += 1
+    cursor.execute("INSERT INTO collection (collection_name, user_id) VALUES (%s, %s)", (collection_name, user_id))
 
-    cursor.execute("SELECT coin_collection FROM users WHERE id = %s", (user_id,))
-    result = cursor.fetchone()
-
-    if result is not None:
-        coin_collection = result[0]
-    else:
-        coin_collection = ","
-
-    if coin_collection is not None:
-        coin_collection += collection_name + ","
-    else:
-        coin_collection = collection_name + ","
-
-    cursor.execute("UPDATE users SET coin_collection = %s WHERE id = %s", (coin_collection, user_id))
     mydb.commit()
 
     await state.finish()
@@ -216,19 +203,15 @@ async def on_help_command(message: types.Message):
 async def show_collection(message: types.Message):
     user_id = message.from_user.id
     username = message.from_user.username
-    cursor.execute("SELECT coin_collection FROM users WHERE id = %s", (user_id,))
-    result = cursor.fetchone()
-    if result is not None:
-        coin_collection = result[0]
-        coins = coin_collection.split(",")
-        coins.remove("")
-        if len(coins) > 0:
-            collection = "\n".join(coins)
-            await message.reply(f"Коллекция юзера @{username}:\n{collection}")
-        else:
-            await message.reply("Коллекция пуста.")
+    cursor.execute("SELECT collection_name FROM collection WHERE user_id = %s", (user_id,))
+    # обработка всего ответа от БД (fetchall)
+    results = cursor.fetchall()
+    rows = [row[0] for row in results]
+    if len(rows) == 0:
+        await message.answer('У вас еще нет коллекций')
     else:
-        await message.reply("Коллекция пуста.")
+        # Отправьте строки в телеграм
+        await message.answer('Ваши коллекции:\n' + '\n'.join(rows))
 
 
 # 10. Запуск бота:
