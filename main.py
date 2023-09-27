@@ -9,7 +9,7 @@ from aiogram.dispatcher import FSMContext
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 import mysql.connector
 from config import TOKEN2, PASSWORD, HOST, USER, DATABASE
-import json
+# import json
 
 # 4. Создаем соединение с базой данных в вашем файле Python:
 
@@ -71,22 +71,27 @@ async def process_coin_name(message: types.Message, state: FSMContext):
 
     cursor.execute("INSERT INTO coin (_description, collection_id) VALUES (%s, %s)", (coin_name, user_id))
     mydb.commit()
-    await message.answer("Введите год монеты:")
+    await message.answer(f'{coin_name}\n  Введите год монеты:')
     # await state.finish()
     await state.set_state("waiting_year") # переход в следующее состояние
-    # await message.answer(f"Монета {coin_name} добавлена в коллекцию.")
+
+
+
 @dp.message_handler(state="waiting_year")
 async def process_coin_name(message: types.Message, state: FSMContext):
-    user_id = message.from_user.id
     coin_year = message.text  # Получаем year монеты из команды
-    cursor.execute("SELECT _description FROM coin WHERE id = 4")
+
+    cursor.execute("SELECT MAX(id) FROM coin") # получили id нашей новой монеты из базы
+    id_our_coin = cursor.fetchone()
+    cursor.execute("UPDATE coin SET _year = %s WHERE id = %s", (coin_year, id_our_coin[0]))
+    # 0 индекс так как результат fetchone это множество
+    mydb.commit() # сохранили изменения
+    cursor.execute("SELECT _description FROM coin WHERE id = %s", id_our_coin)  # получили id нашей новой монеты из базы
     coin_name = cursor.fetchone()
 
-    cursor.execute("UPDATE coin SET _year = %s WHERE _description = %s", (coin_year, coin_name))
-    mydb.commit()
+    await state.finish() # закончили с добавлением 
 
-    # await state.finish()
-    await state.set_state("create_collection") # переход в следующее состояние
+    await message.answer(f"Монета {coin_name[0]} добавлена в коллекцию.")
 
 # ===================================================================
 
