@@ -144,7 +144,7 @@ async def process_photo(message: types.Message):
         data = f.read()
 
     # Записываем данные изображения в базу данных
-    cursor.execute("INSERT INTO photos (image) VALUES (%s)", (data,))
+    cursor.execute("INSERT INTO photos (image, pathfile) VALUES (%s, %s)", (data, file_path))
     mydb.commit()
 
     await message.reply("Изображение успешно сохранено!")
