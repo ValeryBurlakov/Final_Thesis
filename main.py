@@ -4,6 +4,7 @@
 
 from aiogram import Bot, types
 from aiogram.dispatcher import Dispatcher
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 from aiogram.utils import executor
 from aiogram.dispatcher import FSMContext
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
@@ -100,9 +101,24 @@ async def process_coin_name(message: types.Message, state: FSMContext):
 # создание коллекции юзера
 
 
+# @dp.message_handler(commands=['create_collection'])
+# async def add_coin(message: types.Message, state: FSMContext):
+#     user_id = message.from_user.id
+#
+#     await message.answer("Создаем коллекцию")
+#     await state.set_state("waiting_create_collection")
 @dp.message_handler(commands=['create_collection'])
 async def add_coin(message: types.Message, state: FSMContext):
     user_id = message.from_user.id
+
+    # Проверяем количество коллекций пользователя
+    cursor.execute("SELECT COUNT(*) FROM collection WHERE user_id = %s", (user_id,))
+    collection_count = cursor.fetchone()[0]
+
+    if collection_count >= 3:
+        await message.answer(
+            "Вы больше не можете иметь коллекций. Пожалуйста, удалите текущие перед добавлением новой.")
+        return
 
     await message.answer("Создаем коллекцию")
     await state.set_state("waiting_create_collection")
@@ -122,7 +138,48 @@ async def process_coin_name(message: types.Message, state: FSMContext):
     await message.answer(f"коллекция {collection_name} добавлена к юзеру @{username}.")
 
 
+# =========================удаление коллекции======================================
+@dp.message_handler(commands=['delete_collection'])
+async def delete_collection(message: types.Message, state: FSMContext):
+    user_id = message.from_user.id
+
+    # Get the collections owned by the user
+    cursor.execute("SELECT collection_name FROM collection WHERE user_id = %s", (user_id,))
+    collection_names = [name[0] for name in cursor.fetchall()]
+
+    if not collection_names:
+        await message.answer("У вас нет коллекций для удаления.")
+        return
+
+    # Create the keyboard markup with the collection names
+    keyboard = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
+    keyboard.add(*[types.KeyboardButton(name) for name in collection_names])
+    keyboard.add(types.KeyboardButton("Отмена"))
+
+    await message.answer("Выберите коллекцию для удаления:", reply_markup=keyboard)
+    await state.set_state("waiting_delete_collection")
+
+
+@dp.message_handler(state="waiting_delete_collection")
+async def process_delete_collection(message: types.Message, state: FSMContext):
+    user_id = message.from_user.id
+    collection_name = message.text
+
+    if collection_name == "Отмена":
+        await state.finish()
+        await message.answer("Операция отменена.")
+        return
+
+    cursor.execute("DELETE FROM collection WHERE user_id = %s AND collection_name = %s", (user_id, collection_name))
+    mydb.commit()
+
+    await state.finish()
+    await message.answer(f"Коллекция {collection_name} удалена.", reply_markup=types.ReplyKeyboardRemove())
+
+
 # ===============================================================
+
+
 @dp.message_handler(commands=['add_photo'])
 async def add_coin(message: types.Message, state: FSMContext):
     await message.answer(f'пришлите фото')
@@ -148,6 +205,30 @@ async def process_photo(message: types.Message):
     mydb.commit()
 
     await message.reply("Изображение успешно сохранено!")
+
+
+@dp.message_handler(commands=['add_state'])
+async def states(message: types.Message):
+    # Создаем клавиатуру с вариантами состояния монеты
+    keyboard = ReplyKeyboardMarkup(row_width=3, resize_keyboard=True)
+    buttons = [KeyboardButton(text='Отличное'), KeyboardButton(text='Среднее'), KeyboardButton(text='Плохое')]
+    keyboard.add(*buttons)
+
+    await message.answer("Выберите состояние монеты:", reply_markup=keyboard)
+
+
+@dp.message_handler(lambda message: message.text in ['Отличное', 'Среднее', 'Плохое'])
+async def process_choice(message: types.Message):
+    coin_state = message.text
+    idi = 3
+    val = (coin_state, idi)
+    # Ваш код для записи состояния монеты в базу данных MySQL
+    sql = "UPDATE coin SET state = %s WHERE id = %s"
+    cursor.execute(sql, val)
+    mydb.commit()
+
+    await message.answer(f"Вы выбрали состояние {coin_state}. Запись в базу данных прошла успешно.",
+                         reply_markup=types.ReplyKeyboardRemove())
 
 
 # 8. Создаем команду `/remove_coin`, чтобы пользователи могли удалять монеты из своей коллекции:
@@ -184,18 +265,37 @@ async def process_coin_name_remove(message: types.Message, state: FSMContext):
         await message.answer(f"Монеты {coin_name} нет в коллекции.")
 
 
+# @dp.message_handler(commands=['help'])
+# async def on_help_command(message: types.Message):
+#     help_text = "список доступных команд:\n\n" \
+#                 "/start - запуск бота\n" \
+#                 "/help - справка\n" \
+#                 "/create_collection - создать коллекцию\n" \
+#                 "/delete_collection - удалить коллекцию\n" \
+#                 "/add_coin - добавить монету\n" \
+#                 "/remove_coin - удалить монету\n" \
+#                 "/add_photo - тест добавления монеты\n" \
+#                 "/show_collection - показать коллекцию\n"
+#
+#     await message.answer(help_text)
 @dp.message_handler(commands=['help'])
 async def on_help_command(message: types.Message):
     help_text = "список доступных команд:\n\n" \
                 "/start - запуск бота\n" \
                 "/help - справка\n" \
                 "/create_collection - создать коллекцию\n" \
+                "/delete_collection - удалить коллекцию\n" \
                 "/add_coin - добавить монету\n" \
                 "/remove_coin - удалить монету\n" \
                 "/add_photo - тест добавления монеты\n" \
                 "/show_collection - показать коллекцию\n"
 
-    await message.answer(help_text)
+    keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    buttons = ["/start", "/help", "/create_collection", "/delete_collection",
+               "/add_coin", "/remove_coin", "/add_photo", "/show_collection"]
+    keyboard.add(*buttons)
+
+    await message.answer(help_text, reply_markup=keyboard)
 
 
 # dp.register_message_handler(on_help_command, commands="help") # обработчик команды в диспетчер??
@@ -204,6 +304,7 @@ async def on_help_command(message: types.Message):
 
 @dp.message_handler(commands=['show_collection'])
 async def show_collection(message: types.Message):
+    reply_markup = types.ReplyKeyboardRemove()
     user_id = message.from_user.id
     username = message.from_user.username
     cursor.execute("SELECT collection_name FROM collection WHERE user_id = %s", (user_id,))
@@ -214,7 +315,7 @@ async def show_collection(message: types.Message):
         await message.answer('У вас еще нет коллекций')
     else:
         # Отправьте строки в телеграм
-        await message.answer('Ваши коллекции:\n' + '\n'.join(rows))
+        await message.answer(f'Ваши коллекции:\n' + '\n'.join(rows), reply_markup=types.ReplyKeyboardRemove())
 
 
 # 10. Запуск бота:
