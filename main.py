@@ -151,7 +151,7 @@ async def add_coin(message: types.Message, state: FSMContext):
             "Вы больше не можете иметь коллекций. Пожалуйста, удалите текущие перед добавлением новой.")
         return
 
-    await message.answer("Создаем коллекцию")
+    await message.answer("Создаем коллекцию. Введите названиеЖ:", reply_markup=types.ReplyKeyboardRemove())
     await state.set_state("waiting_create_collection")
 
 
@@ -344,7 +344,7 @@ async def show_collection(message: types.Message):
     results = cursor.fetchall()
     rows = [row[0] for row in results]
     if len(rows) == 0:
-        await message.answer('У вас еще нет коллекций')
+        await message.answer('У вас еще нет коллекций', reply_markup=types.ReplyKeyboardRemove())
     else:
         # Отправьте строки в телеграм
         await message.answer(f'Ваши коллекции:\n' + '\n'.join(rows), reply_markup=types.ReplyKeyboardRemove())
