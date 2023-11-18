@@ -24,7 +24,7 @@ def create_collection():
                 "Вы больше не можете иметь коллекций. Пожалуйста, удалите текущие перед добавлением новой.")
             return
 
-        await message.answer("Создаем коллекцию. Введите названиеЖ:", reply_markup=types.ReplyKeyboardRemove())
+        await message.answer("Создаем коллекцию. Введите название:", reply_markup=types.ReplyKeyboardRemove())
         await state.set_state("waiting_create_collection")
 
     @dp.message_handler(state="waiting_create_collection")

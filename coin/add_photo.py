@@ -2,12 +2,12 @@ from aiogram import types
 from aiogram.dispatcher import FSMContext
 from initialization.initialization import mydb, dp, cursor
 
+
 def add_photo():
     @dp.message_handler(commands=['add_photo'])
     async def add(message: types.Message, state: FSMContext):
         await message.answer(f'пришлите фото')
         await state.set_state("test_add_photo")  # переход в следующее состояние
-
 
     @dp.message_handler(state="test_add_photo", content_types=types.ContentType.PHOTO)
     async def process_photo(message: types.Message):

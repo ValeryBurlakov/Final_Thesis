@@ -2,6 +2,7 @@ from aiogram import types
 from aiogram.dispatcher import FSMContext
 from initialization.initialization import mydb, dp, cursor
 
+
 # 8. Создаем команду `/remove_coin`, чтобы пользователи могли удалять монеты из своей коллекции:
 def remove_coin():
     @dp.message_handler(commands=['remove_coin'])

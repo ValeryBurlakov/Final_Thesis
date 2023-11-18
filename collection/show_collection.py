@@ -1,6 +1,7 @@
 from aiogram import types
 from initialization.initialization import mydb, dp, cursor
 
+
 # 9. Создаем команду `/show_collection`, чтобы пользователи могли просмотреть свою коллекцию монет:
 def show_collection():
     @dp.message_handler(commands=['show_collection'])

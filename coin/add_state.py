@@ -2,6 +2,7 @@ from aiogram import types
 from initialization.initialization import mydb, dp, cursor
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
+
 def add_state():
     @dp.message_handler(commands=['add_state'])
     async def states(message: types.Message):
@@ -11,7 +12,6 @@ def add_state():
         keyboard.add(*buttons)
 
         await message.answer("Выберите состояние монеты:", reply_markup=keyboard)
-
 
     @dp.message_handler(lambda message: message.text in ['Отличное', 'Среднее', 'Плохое'])
     async def process_choice(message: types.Message):
@@ -25,4 +25,3 @@ def add_state():
 
         await message.answer(f"Вы выбрали состояние {coin_state}. Запись в базу данных прошла успешно.",
                              reply_markup=types.ReplyKeyboardRemove())
-
