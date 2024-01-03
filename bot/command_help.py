@@ -1,6 +1,7 @@
 from aiogram import types
 from initialization.initialization import mydb, dp, cursor
 
+
 # @dp.message_handler(commands=['help'])
 # async def on_help_command(message: types.Message):
 #     help_text = "список доступных команд:\n\n" \
