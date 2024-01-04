@@ -14,7 +14,9 @@ def add_photo():
         # Получаем объект изображения
         photo = message.photo[-1]
         file_id = photo.file_id
+        user_id = message.from_user.id
         file_path = f'/home/valery/Photo_coin/{file_id}.jpg'
+        # file_path = f'/home/Photo_coin/{user_id}/{file_id}.jpg'
 
         # Сохраняем изображение на сервере
         await photo.download(destination=file_path)

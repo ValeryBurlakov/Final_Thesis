@@ -84,16 +84,26 @@
     решает проблему с их вылетами путем автоматического перезапуска с сохранением лога. 
     Это решение особенно полезно для тех, кто держит на своем сервере большое количество 
     скриптов и нуждается в их удобном управлении.
-    sudo apt install nodejs
-    sudo apt install npm
-    npm install pm2 -g
-    pm2 start app_name.py --interpreter=python3
-    pm2 list
-    pm2 stop id
-    pm2 start id
-    pm2 restart id
-    pm2 delete id
-    pm2 monit
+    Так как PM2 написан на Node.js и устанавливается с помощью npm, 
+    нужно установить их на свой виртуальный сервер:
+        * sudo apt install nodejs
+        * sudo apt install npm
+    Установка самого менеджера:
+        * npm install pm2 -g
+    Запуск приложения через менеджер:
+        * pm2 start app_name.py --interpreter=python3
+    Список процессов:
+        * pm2 list
+    Остановка процесса:
+        * pm2 stop id
+    Запуск процесса:
+        * pm2 start id
+    Перезапуск процесса:
+        * pm2 restart id
+    Удалить процесс
+        * pm2 delete id
+    Просмотр логов приложений
+        * pm2 monit
 
 # Глава 2. Мессенджер Телеграм, телеграм-бот, Язык программирования Python, База данных MySQL, библиотека Aiogram
 ### Мессенджер Телеграм:
@@ -201,7 +211,6 @@ Python разработан Гвидо Ван Россумом (Guido Van Rossum
 
     id INT PRIMARY KEY AUTO_INCREMENT,
     user_id INT,
-    coin_list JSON,
 	FOREIGN KEY*(user_id) REFERENCES users(id)
 );
 
@@ -209,13 +218,15 @@ Python разработан Гвидо Ван Россумом (Guido Van Rossum
 
 	id INT PRIMARY KEY,
     _description VARCHAR(255),
-    _year INT
+    _year INT,
+    state VARCHAR(255)
 );
 
 **CREATE TABLE** photos (
 
 	id INT PRIMARY KEY AUTO_INCREMENT,
-    image BLOB
+    image BLOB,
+    pathfile VARCHAR(255)
 );
 
 5. связать базу данных MySQL с телеграм ботом.

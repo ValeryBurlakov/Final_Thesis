@@ -40,8 +40,14 @@ def add_coin_():
 
         cursor.execute("UPDATE coin SET collection_name = %s WHERE id = %s", (collection_name, id_our_coin[0]))
         mydb.commit()  # сохранили изменения
+        cursor.execute("SELECT id from collection WHERE collection_name = %s", [collection_name])
+        id_collection = cursor.fetchone()
+        cursor.execute("UPDATE coin SET collection_id = %s WHERE id = %s", (id_collection[0], id_our_coin[0]))
+        mydb.commit()
         cursor.execute("SELECT _year FROM coin WHERE id = %s", id_our_coin)  # получили id нашей новой монеты из базы
         coin_year = cursor.fetchone()
+        # позволяет использовать переменные в других хендлерах
+        await state.update_data(collection_name=collection_name)
         await message.answer(f"Введите год монеты:", reply_markup=types.ReplyKeyboardRemove())
         await state.set_state("waiting_year")
 
@@ -80,14 +86,17 @@ def add_coin_():
 
     @dp.message_handler(state="add_photo", content_types=types.ContentType.PHOTO)
     async def process_photo(message: types.Message, state: FSMContext):
+        # используем переменную collection_name из другого хендлера
+        data = await state.get_data()
+        collection_name = data.get('collection_name')
         # Получаем объект изображения
         photo = message.photo[-1]
         file_id = photo.file_id
-        file_path = f'/home/valery/Photo_coin/{file_id}.jpg'
-
+        user_id = message.from_user.id
+        # file_path = f'/home/valery/Photo_coin/{file_id}.jpg'
+        file_path = f'/home/valery/Photo_coin/{user_id}/{collection_name}/{file_id}.jpg'
         # Сохраняем изображение на сервере
         await photo.download(destination=file_path)
-
         # Открываем файл и считываем его содержимое в бинарном виде
         with open(file_path, 'rb') as f:
             data = f.read()
