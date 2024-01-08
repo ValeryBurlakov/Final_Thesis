@@ -11,6 +11,11 @@ from collection.delete_collection import delete_collection
 from initialization.initialization import mydb, dp, cursor
 from coin.remove_coin import remove_coin
 from collection.show_collection import show_collection
+import logging
+
+logging.basicConfig(filename='restart.log', level=logging.INFO, format='%(asctime)s - %(message)s')
+
+logging.info('Приложение было перезапущено')
 
 start_(cursor, mydb)
 add_coin_()

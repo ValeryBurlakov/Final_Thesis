@@ -1,0 +1,638 @@
+2024-01-05 01:46:04,976 - Приложение было перезапущено
+2024-01-05 01:46:05,096 - Bot: Burlakoff_Bot [@IAmManBot]
+2024-01-05 01:46:05,172 - Updates were skipped successfully.
+2024-01-05 01:46:05,172 - Start polling.
+
+2024-01-08 23:13:13,440 - Приложение было перезапущено
+2024-01-08 23:13:13,679 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-08 23:13:13,806 - Updates were skipped successfully.
+2024-01-08 23:13:13,806 - Start polling.
+2024-01-08 23:14:11,572 - Stop polling...
+2024-01-08 23:14:11,573 - Goodbye!
+2024-01-08 23:24:44,931 - Приложение было перезапущено
+2024-01-08 23:24:45,167 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-08 23:24:45,288 - Updates were skipped successfully.
+2024-01-08 23:24:45,289 - Start polling.
+2024-01-08 23:24:51,499 - Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at /home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=TypeError("process_collection_selection() missing 1 required positional argument: 'query'")>
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+TypeError: process_collection_selection() missing 1 required positional argument: 'query'
+2024-01-08 23:25:13,407 - Task exception was never retrieved
+future: <Task finished name='Task-22' coro=<Dispatcher._process_polling_updates() done, defined at /home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=TypeError("process_collection_selection() missing 1 required positional argument: 'query'")>
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+TypeError: process_collection_selection() missing 1 required positional argument: 'query'
+2024-01-08 23:26:06,662 - Stop polling...
+2024-01-08 23:26:06,663 - Goodbye!
+2024-01-08 23:27:30,805 - Приложение было перезапущено
+2024-01-08 23:27:30,988 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-08 23:27:31,103 - Updates were skipped successfully.
+2024-01-08 23:27:31,103 - Start polling.
+2024-01-08 23:27:34,930 - Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at /home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=TypeError("process_collection_selection() missing 1 required positional argument: 'query'")>
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+TypeError: process_collection_selection() missing 1 required positional argument: 'query'
+2024-01-08 23:28:07,628 - Stop polling...
+2024-01-08 23:28:07,629 - Goodbye!
+2024-01-08 23:28:09,237 - Приложение было перезапущено
+2024-01-08 23:28:09,452 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-08 23:28:09,594 - Updates were skipped successfully.
+2024-01-08 23:28:09,595 - Start polling.
+2024-01-08 23:28:15,883 - Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at /home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=TypeError("process_collection_selection() missing 1 required positional argument: 'query'")>
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+TypeError: process_collection_selection() missing 1 required positional argument: 'query'
+2024-01-08 23:28:50,037 - Stop polling...
+2024-01-08 23:28:50,037 - Goodbye!
+2024-01-08 23:28:51,428 - Приложение было перезапущено
+2024-01-08 23:28:51,610 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-08 23:28:51,722 - Updates were skipped successfully.
+2024-01-08 23:28:51,722 - Start polling.
+2024-01-08 23:28:54,471 - Task exception was never retrieved
+future: <Task finished name='Task-13' coro=<Dispatcher._process_polling_updates() done, defined at /home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=TypeError("show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'")>
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+TypeError: show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'
+2024-01-08 23:29:05,761 - Task exception was never retrieved
+future: <Task finished name='Task-16' coro=<Dispatcher._process_polling_updates() done, defined at /home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=TypeError("show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'")>
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+TypeError: show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'
+2024-01-08 23:29:19,819 - Stop polling...
+2024-01-08 23:29:19,820 - Goodbye!
+2024-01-08 23:29:20,526 - Приложение было перезапущено
+2024-01-08 23:29:20,724 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-08 23:29:20,850 - Updates were skipped successfully.
+2024-01-08 23:29:20,851 - Start polling.
+2024-01-08 23:29:24,134 - Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<Dispatcher._process_polling_updates() done, defined at /home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=TypeError("show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'")>
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+TypeError: show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'
+2024-01-08 23:29:34,255 - Stop polling...
+2024-01-08 23:29:34,256 - Goodbye!
+2024-01-08 23:29:34,962 - Приложение было перезапущено
+2024-01-08 23:29:35,332 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-08 23:29:35,468 - Updates were skipped successfully.
+2024-01-08 23:29:35,468 - Start polling.
+2024-01-08 23:29:37,260 - Task exception was never retrieved
+future: <Task finished name='Task-13' coro=<Dispatcher._process_polling_updates() done, defined at /home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=TypeError("show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'")>
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+TypeError: show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'
+2024-01-08 23:29:39,456 - Task exception was never retrieved
+future: <Task finished name='Task-16' coro=<Dispatcher._process_polling_updates() done, defined at /home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=TypeError("show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'")>
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+TypeError: show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'
+2024-01-08 23:29:41,323 - Task exception was never retrieved
+future: <Task finished name='Task-19' coro=<Dispatcher._process_polling_updates() done, defined at /home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=TypeError("show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'")>
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+TypeError: show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'
+2024-01-08 23:29:41,794 - Task exception was never retrieved
+future: <Task finished name='Task-22' coro=<Dispatcher._process_polling_updates() done, defined at /home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=TypeError("show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'")>
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+TypeError: show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'
+2024-01-08 23:29:42,734 - Task exception was never retrieved
+future: <Task finished name='Task-25' coro=<Dispatcher._process_polling_updates() done, defined at /home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=TypeError("show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'")>
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+TypeError: show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'
+2024-01-08 23:29:42,897 - Task exception was never retrieved
+future: <Task finished name='Task-28' coro=<Dispatcher._process_polling_updates() done, defined at /home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=TypeError("show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'")>
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+TypeError: show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'
+2024-01-08 23:29:43,147 - Task exception was never retrieved
+future: <Task finished name='Task-31' coro=<Dispatcher._process_polling_updates() done, defined at /home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=TypeError("show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'")>
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+TypeError: show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'
+2024-01-08 23:29:43,357 - Task exception was never retrieved
+future: <Task finished name='Task-34' coro=<Dispatcher._process_polling_updates() done, defined at /home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=TypeError("show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'")>
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+TypeError: show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'
+2024-01-08 23:29:43,636 - Task exception was never retrieved
+future: <Task finished name='Task-37' coro=<Dispatcher._process_polling_updates() done, defined at /home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=TypeError("show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'")>
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+TypeError: show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'
+2024-01-08 23:29:47,887 - Stop polling...
+2024-01-08 23:29:47,888 - Goodbye!
+2024-01-08 23:29:49,397 - Приложение было перезапущено
+2024-01-08 23:29:49,630 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-08 23:29:49,744 - Updates were skipped successfully.
+2024-01-08 23:29:49,744 - Start polling.
+2024-01-08 23:29:56,900 - Task exception was never retrieved
+future: <Task finished name='Task-17' coro=<Dispatcher._process_polling_updates() done, defined at /home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=TypeError("show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'")>
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+TypeError: show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'
+2024-01-08 23:29:59,335 - Task exception was never retrieved
+future: <Task finished name='Task-20' coro=<Dispatcher._process_polling_updates() done, defined at /home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=TypeError("show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'")>
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+TypeError: show_collection.<locals>.process_collection_selection() missing 1 required positional argument: 'query'
+2024-01-08 23:31:41,270 - Stop polling...
+2024-01-08 23:31:41,273 - Goodbye!
+2024-01-08 23:32:53,882 - Приложение было перезапущено
+2024-01-08 23:32:54,160 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-08 23:32:54,275 - Updates were skipped successfully.
+2024-01-08 23:32:54,275 - Start polling.
+2024-01-08 23:33:57,666 - Stop polling...
+2024-01-08 23:33:57,682 - Goodbye!
+2024-01-08 23:34:57,740 - Приложение было перезапущено
+2024-01-08 23:34:57,989 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-08 23:34:58,100 - Updates were skipped successfully.
+2024-01-08 23:34:58,100 - Start polling.
+2024-01-08 23:36:27,188 - Stop polling...
+2024-01-08 23:36:27,220 - Goodbye!
+2024-01-08 23:36:28,921 - Приложение было перезапущено
+2024-01-08 23:36:29,126 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-08 23:36:29,239 - Updates were skipped successfully.
+2024-01-08 23:36:29,240 - Start polling.
+2024-01-08 23:38:58,162 - Stop polling...
+2024-01-08 23:38:58,165 - Goodbye!
+2024-01-08 23:39:00,416 - Приложение было перезапущено
+2024-01-08 23:39:00,615 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-08 23:39:00,727 - Updates were skipped successfully.
+2024-01-08 23:39:00,727 - Start polling.
+2024-01-08 23:39:34,611 - Stop polling...
+2024-01-08 23:39:34,615 - Goodbye!
+2024-01-08 23:39:38,825 - Приложение было перезапущено
+2024-01-08 23:39:39,128 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-08 23:39:39,253 - Updates were skipped successfully.
+2024-01-08 23:39:39,253 - Start polling.
+2024-01-08 23:43:41,309 - Stop polling...
+2024-01-08 23:43:41,310 - Goodbye!
+2024-01-08 23:43:42,303 - Приложение было перезапущено
+2024-01-08 23:43:42,500 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-08 23:43:42,613 - Updates were skipped successfully.
+2024-01-08 23:43:42,613 - Start polling.
+2024-01-08 23:44:26,287 - Stop polling...
+2024-01-08 23:44:26,288 - Goodbye!
+2024-01-08 23:44:27,741 - Приложение было перезапущено
+2024-01-08 23:44:27,922 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-08 23:44:28,038 - Updates were skipped successfully.
+2024-01-08 23:44:28,039 - Start polling.
+2024-01-08 23:46:16,477 - Stop polling...
+2024-01-08 23:46:16,477 - Goodbye!
+2024-01-08 23:46:18,351 - Приложение было перезапущено
+2024-01-08 23:46:18,594 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-08 23:46:18,713 - Updates were skipped successfully.
+2024-01-08 23:46:18,713 - Start polling.
+2024-01-08 23:48:09,573 - Stop polling...
+2024-01-08 23:48:09,574 - Goodbye!
+2024-01-08 23:48:11,004 - Приложение было перезапущено
+2024-01-08 23:48:11,237 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-08 23:48:11,373 - Updates were skipped successfully.
+2024-01-08 23:48:11,374 - Start polling.
+2024-01-08 23:48:22,178 - Stop polling...
+2024-01-08 23:48:22,178 - Goodbye!
+2024-01-08 23:48:24,441 - Приложение было перезапущено
+2024-01-08 23:48:24,644 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-08 23:48:24,774 - Updates were skipped successfully.
+2024-01-08 23:48:24,775 - Start polling.
+2024-01-09 00:56:34,692 - Stop polling...
+2024-01-09 00:56:34,693 - Goodbye!
+2024-01-09 00:56:40,379 - Приложение было перезапущено
+2024-01-09 00:56:40,575 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-09 00:56:40,696 - Updates were skipped successfully.
+2024-01-09 00:56:40,696 - Start polling.
+2024-01-09 00:58:03,972 - Stop polling...
+2024-01-09 00:58:03,972 - Goodbye!
+2024-01-09 00:58:23,118 - Приложение было перезапущено
+2024-01-09 00:58:23,312 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-09 00:58:23,427 - Updates were skipped successfully.
+2024-01-09 00:58:23,427 - Start polling.
+2024-01-09 01:00:04,629 - Stop polling...
+2024-01-09 01:00:04,629 - Goodbye!
+2024-01-09 01:00:10,782 - Приложение было перезапущено
+2024-01-09 01:00:10,981 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-09 01:00:11,099 - Updates were skipped successfully.
+2024-01-09 01:00:11,099 - Start polling.
+2024-01-09 01:01:30,762 - Stop polling...
+2024-01-09 01:01:30,763 - Goodbye!
+2024-01-09 01:01:32,709 - Приложение было перезапущено
+2024-01-09 01:01:32,949 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-09 01:01:33,061 - Updates were skipped successfully.
+2024-01-09 01:01:33,061 - Start polling.
+2024-01-09 01:03:29,587 - Stop polling...
+2024-01-09 01:03:29,588 - Goodbye!
+2024-01-09 01:03:31,993 - Приложение было перезапущено
+2024-01-09 01:03:32,203 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-09 01:03:32,322 - Updates were skipped successfully.
+2024-01-09 01:03:32,322 - Start polling.
+2024-01-09 01:06:26,316 - Stop polling...
+2024-01-09 01:06:26,318 - Goodbye!
+2024-01-09 01:06:28,042 - Приложение было перезапущено
+2024-01-09 01:06:28,296 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-09 01:06:28,410 - Updates were skipped successfully.
+2024-01-09 01:06:28,410 - Start polling.
+2024-01-09 01:07:34,659 - Stop polling...
+2024-01-09 01:07:34,661 - Goodbye!
+2024-01-09 01:07:38,594 - Приложение было перезапущено
+2024-01-09 01:07:38,844 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-09 01:07:38,970 - Updates were skipped successfully.
+2024-01-09 01:07:38,971 - Start polling.
+2024-01-09 01:08:49,749 - Stop polling...
+2024-01-09 01:08:49,750 - Goodbye!
+2024-01-09 01:08:51,647 - Приложение было перезапущено
+2024-01-09 01:08:51,856 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-09 01:08:51,976 - Updates were skipped successfully.
+2024-01-09 01:08:51,976 - Start polling.
+2024-01-09 01:13:08,039 - Stop polling...
+2024-01-09 01:13:08,043 - Goodbye!
+2024-01-09 01:13:14,686 - Приложение было перезапущено
+2024-01-09 01:13:14,933 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-09 01:13:15,066 - Updates were skipped successfully.
+2024-01-09 01:13:15,067 - Start polling.
+2024-01-09 01:15:41,072 - Stop polling...
+2024-01-09 01:15:41,074 - Goodbye!
+2024-01-09 01:15:51,659 - Приложение было перезапущено
+2024-01-09 01:15:52,918 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-09 01:15:53,048 - Updates were skipped successfully.
+2024-01-09 01:15:53,048 - Start polling.
+2024-01-09 01:16:30,554 - Stop polling...
+2024-01-09 01:16:30,555 - Goodbye!
+2024-01-09 01:16:32,052 - Приложение было перезапущено
+2024-01-09 01:16:32,251 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-09 01:16:32,381 - Updates were skipped successfully.
+2024-01-09 01:16:32,382 - Start polling.
+2024-01-09 01:16:34,394 - Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<Dispatcher._process_polling_updates() done, defined at /home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=ProgrammingError(-1, 'Could not process parameters: str(Two), it must be of type list, tuple or dict', None)>
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/collection/show_collection.py", line 52, in select_collection
+    cursor.execute("SELECT _description FROM coin WHERE collection_name = %s",
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/mysql/connector/cursor_cext.py", line 317, in execute
+    prepared = self._cnx.prepare_for_mysql(params)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 816, in prepare_for_mysql
+    raise ProgrammingError(
+mysql.connector.errors.ProgrammingError: Could not process parameters: str(Two), it must be of type list, tuple or dict
+2024-01-09 01:18:36,112 - Stop polling...
+2024-01-09 01:18:36,114 - Goodbye!
+2024-01-09 01:18:40,091 - Приложение было перезапущено
+2024-01-09 01:18:40,331 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-09 01:18:40,449 - Updates were skipped successfully.
+2024-01-09 01:18:40,449 - Start polling.
+2024-01-09 01:18:44,176 - Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at /home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=ProgrammingError(-1, 'Could not process parameters: str(Two), it must be of type list, tuple or dict', None)>
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/collection/show_collection.py", line 52, in select_collection
+    cursor.execute("SELECT _description FROM coin WHERE collection_name = %s",
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/mysql/connector/cursor_cext.py", line 317, in execute
+    prepared = self._cnx.prepare_for_mysql(params)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 816, in prepare_for_mysql
+    raise ProgrammingError(
+mysql.connector.errors.ProgrammingError: Could not process parameters: str(Two), it must be of type list, tuple or dict
+2024-01-09 01:19:06,170 - Stop polling...
+2024-01-09 01:19:06,171 - Goodbye!
+2024-01-09 01:20:55,135 - Приложение было перезапущено
+2024-01-09 01:20:55,343 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-09 01:20:55,470 - Updates were skipped successfully.
+2024-01-09 01:20:55,471 - Start polling.
+2024-01-09 01:21:05,345 - Task exception was never retrieved
+future: <Task finished name='Task-17' coro=<Dispatcher._process_polling_updates() done, defined at /home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=ProgrammingError(-1, 'Could not process parameters: str(Two), it must be of type list, tuple or dict', None)>
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/collection/show_collection.py", line 52, in select_collection
+    cursor.execute("SELECT _description FROM coin WHERE collection_name = %s",
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/mysql/connector/cursor_cext.py", line 317, in execute
+    prepared = self._cnx.prepare_for_mysql(params)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 816, in prepare_for_mysql
+    raise ProgrammingError(
+mysql.connector.errors.ProgrammingError: Could not process parameters: str(Two), it must be of type list, tuple or dict
+2024-01-09 01:21:24,820 - Stop polling...
+2024-01-09 01:21:24,821 - Goodbye!
+2024-01-09 01:23:23,213 - Приложение было перезапущено
+2024-01-09 01:23:23,459 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-09 01:23:23,577 - Updates were skipped successfully.
+2024-01-09 01:23:23,577 - Start polling.
+2024-01-09 01:24:22,125 - Stop polling...
+2024-01-09 01:24:22,125 - Goodbye!
+2024-01-09 01:24:23,915 - Приложение было перезапущено
+2024-01-09 01:24:24,160 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-09 01:24:24,292 - Updates were skipped successfully.
+2024-01-09 01:24:24,293 - Start polling.
+2024-01-09 01:26:36,506 - Stop polling...
+2024-01-09 01:26:36,507 - Goodbye!
+2024-01-09 01:26:38,419 - Приложение было перезапущено
+2024-01-09 01:26:38,644 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-09 01:26:38,756 - Updates were skipped successfully.
+2024-01-09 01:26:38,756 - Start polling.
+2024-01-09 01:36:39,434 - Stop polling...
+2024-01-09 01:36:39,439 - Goodbye!
+2024-01-09 01:36:41,207 - Приложение было перезапущено
+2024-01-09 01:36:41,404 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-09 01:36:41,517 - Updates were skipped successfully.
+2024-01-09 01:36:41,517 - Start polling.
+2024-01-09 01:37:26,631 - Stop polling...
+2024-01-09 01:37:26,632 - Goodbye!
+2024-01-09 01:37:28,799 - Приложение было перезапущено
+2024-01-09 01:37:28,994 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-09 01:37:29,109 - Updates were skipped successfully.
+2024-01-09 01:37:29,109 - Start polling.
+2024-01-09 01:40:47,701 - Stop polling...
+2024-01-09 01:40:47,706 - Goodbye!
+2024-01-09 01:40:50,775 - Приложение было перезапущено
+2024-01-09 01:40:50,969 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-09 01:40:51,197 - Updates were skipped successfully.
+2024-01-09 01:40:51,198 - Start polling.
+2024-01-09 01:41:03,371 - Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<Dispatcher._process_polling_updates() done, defined at /home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=ProgrammingError(1054, "1054 (42S22): Unknown column 'photos.coin_id' in 'on clause'", '42S22')>
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 633, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'photos.coin_id' in 'on clause'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/collection/show_collection.py", line 75, in select_coin
+    cursor.execute(
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/mysql/connector/cursor_cext.py", line 330, in execute
+    result = self._cnx.cmd_query(
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 77, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 641, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'photos.coin_id' in 'on clause'
+2024-01-09 01:41:07,837 - Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<Dispatcher._process_polling_updates() done, defined at /home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=ProgrammingError(1054, "1054 (42S22): Unknown column 'photos.coin_id' in 'on clause'", '42S22')>
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 633, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'photos.coin_id' in 'on clause'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/collection/show_collection.py", line 75, in select_coin
+    cursor.execute(
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/mysql/connector/cursor_cext.py", line 330, in execute
+    result = self._cnx.cmd_query(
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 77, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 641, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'photos.coin_id' in 'on clause'
+2024-01-09 01:41:20,055 - Task exception was never retrieved
+future: <Task finished name='Task-24' coro=<Dispatcher._process_polling_updates() done, defined at /home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py:407> exception=ProgrammingError(1054, "1054 (42S22): Unknown column 'photos.coin_id' in 'on clause'", '42S22')>
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 633, in cmd_query
+    self._cmysql.query(
+_mysql_connector.MySQLInterfaceError: Unknown column 'photos.coin_id' in 'on clause'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/aiogram/dispatcher/handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/collection/show_collection.py", line 75, in select_coin
+    cursor.execute(
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/mysql/connector/cursor_cext.py", line 330, in execute
+    result = self._cnx.cmd_query(
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/mysql/connector/opentelemetry/context_propagation.py", line 77, in wrapper
+    return method(cnx, *args, **kwargs)
+  File "/home/valery/Рабочий стол/Diplom/Final_Thesis_Collection_of_coins/venv/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 641, in cmd_query
+    raise get_mysql_exception(
+mysql.connector.errors.ProgrammingError: 1054 (42S22): Unknown column 'photos.coin_id' in 'on clause'
+2024-01-09 01:42:29,548 - Stop polling...
+2024-01-09 01:42:29,553 - Goodbye!
+2024-01-09 01:42:31,546 - Приложение было перезапущено
+2024-01-09 01:42:31,755 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-09 01:42:32,170 - Updates were skipped successfully.
+2024-01-09 01:42:32,170 - Start polling.
+2024-01-09 01:43:46,875 - Stop polling...
+2024-01-09 01:43:46,877 - Goodbye!
+2024-01-09 01:43:48,802 - Приложение было перезапущено
+2024-01-09 01:43:49,288 - Bot: Test_Burlakoff_bot [@Bot_Burlakoff_bot]
+2024-01-09 01:43:49,410 - Updates were skipped successfully.
+2024-01-09 01:43:49,410 - Start polling.
+2024-01-09 01:44:10,997 - Stop polling...
+2024-01-09 01:44:10,999 - Goodbye!
