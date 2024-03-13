@@ -291,11 +291,37 @@ Python разработан Гвидо Ван Россумом (Guido Van Rossum
 * aiogram 2.24
 
 ### Список используемой литературы:
-* https://www.python.org/doc/ - Python documentation
-* https://dev.mysql.com/doc/ - MySQL documentation
-* https://docs.aiogram.dev/en/latest/# - Aiogram Documentation
-* https://core.telegram.org/bots - Telegram bots
-* https://ru.wikipedia.org/wiki/Telegram - Мессенджер Телеграм
-* https://aws.amazon.com/ru/what-is/python/ - Язык программирования Python
-* https://www.nic.ru/help/chto-takoe-mysql_8510.html - БД MySQL
-* https://skillbox.ru/media/code/chatboty-v-telegram-na-python-chast-1/#stk-2 - библиотека Aiogram
+ * https://www.python.org/doc/ - Python documentation
+ * https://dev.mysql.com/doc/ - MySQL documentation
+ * https://docs.aiogram.dev/en/latest/# - Aiogram Documentation
+ * https://core.telegram.org/bots - Telegram bots
+ * https://ru.wikipedia.org/wiki/Telegram - Мессенджер Телеграм
+ * https://aws.amazon.com/ru/what-is/python/ - Язык программирования Python
+ * https://www.nic.ru/help/chto-takoe-mysql_8510.html - БД MySQL
+ * https://skillbox.ru/media/code/chatboty-v-telegram-na-python-chast-1/#stk-2 - библиотека Aiogram
+ * https://losst.pro/ustanovka-pycharm-ubuntu-16-04 - установка IDE PyCharm в ubuntu
+ * https://snapcraft.io/docs/installing-snap-on-ubuntu - установка snap в ubuntu
+ * https://ubuntu.com/server/docs/service-openssh - установка SSH
+ * https://surik00.gitbooks.io/aiogram-lessons/content/ - информация по кнопкам в aiogram
+ * https://qna.habr.com/q/1137154 - DeprecationWarning, destination_file in mixins.py
+ * https://mastergroosha.github.io/aiogram-3-guide/quickstart/ - начало создания бота, базовая информация
+ * https://habr.com/ru/articles/720480/  - PyCharm, создание проекта
+ * https://habr.com/ru/articles/732136/ - создание бота при помощи aiogram
+ * https://sky.pro/media/kak-sozdat-virtualnoe-okruzhenie-python/ - виртуальное окружение
+ * https://habr.com/ru/articles/491916/ - еще информация про виртуальное окружение
+ * https://dev.mysql.com/doc/workbench/en/wb-installing-linux.html - установка MySQL Workbench, Linux
+ * https://losst.pro/ustanovka-mysql-workbench-v-ubuntu - инструкция по установке MySQL Workbench на русском
+ * http://mithrandir.ru/professional/soft-and-hardware/mysql-workbench-server.html - подключение к mysql на сервере по SSH
+ * https://www.computernetworkingnotes.com/linux-tutorials/how-to-install-filezilla-ftp-client-in-ubuntu.html - FileZilla, установка
+ * https://filezilla.ru/documentation/Howto - FileZilla, подключение к серверу
+ * https://habr.com/ru/articles/566218/ - UseCase диаграмма
+ * https://python-school.ru/blog/python/logging-python/ - логирование
+ * https://habr.com/ru/companies/wunderfund/articles/683880/ - логирование
+ * https://www.lucidchart.com/pages/ru/erd-диаграмма - ERD diagram
+ * https://practicum.yandex.ru/blog/chto-takoe-er-diagramma/ - ERD diagram
+ * https://ru.stackoverflow.com/questions/396133/requirements-txt-как-получить - requirements
+ * https://www.jetbrains.com/help/pycharm/managing-dependencies.html#create-requirements - requirements
+ * https://pythonworld.ru/tipy-dannyx-v-python/isklyucheniya-v-python-konstrukciya-try-except-dlya-obrabotki-isklyuchenij.html - исключения
+ * https://habr.com/ru/companies/wunderfund/articles/736526/ - исключения
+ * https://tatyderb.gitbooks.io/python-express-course/content/chapter_exception/7_summary.html - исключения
+
